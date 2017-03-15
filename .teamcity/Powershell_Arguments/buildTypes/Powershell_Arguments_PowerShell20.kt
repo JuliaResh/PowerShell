@@ -1,6 +1,7 @@
 package Powershell_Arguments.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v10.*
+import jetbrains.buildServer.configs.kotlin.v10.buildSteps.powerShell
 
 object Powershell_Arguments_PowerShell20 : BuildType({
     //template(Powershell_Arguments.buildTypes.Powershell_Arguments_Arguments_2)
