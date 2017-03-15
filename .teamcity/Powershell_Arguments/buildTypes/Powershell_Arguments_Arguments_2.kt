@@ -11,8 +11,7 @@ import jetbrains.buildServer.configs.kotlin.v10.failureConditions.failOnText
 object Powershell_Arguments_Arguments_2 : Template({
     uuid = "dd88193c-c26d-4822-babc-199229d16377"
     extId = "Powershell_Arguments_Arguments_2"
-    name = "Arguments"
-
+    name = "Arguments changed"
 
     vcs {
         root(PowerShell.vcsRoots.Powershell_HttpsGithubComJuliaReshMyProjectGit)
