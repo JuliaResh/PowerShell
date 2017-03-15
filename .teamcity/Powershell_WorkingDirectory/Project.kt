@@ -19,6 +19,7 @@ object Project : Project({
 
     template(Powershell_WorkingDirectory_CheckFileWasCreatedInSpecifiedWorkingDirectory)
 
+    //comment
     params {
         param("file", "file.txt")
         param("path", "")
