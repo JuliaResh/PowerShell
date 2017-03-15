@@ -21,6 +21,15 @@ object Powershell_Arguments_Arguments_2 : Template({
 
     steps {
         powerShell {
+            name = "One argument with space A"
+            id = "RUNNER_55_A"
+            scriptMode = file {
+                path = "argument.ps1"
+            }
+            noProfile = false
+            param("jetbrains_powershell_scriptArguments", """"one test-message"""")
+        }
+        powerShell {
             name = "One argument with space"
             id = "RUNNER_55"
             scriptMode = file {
