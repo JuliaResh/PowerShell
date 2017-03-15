@@ -12,7 +12,7 @@ object Powershell_Arguments_PowerShell20 : BuildType({
     steps {
         powerShell {
             name = "One argument with space A"
-            id = "RUNNER_55_A"
+            id = "RUNNER_55_B"
             scriptMode = file {
                 path = "argument.ps1"
             }
