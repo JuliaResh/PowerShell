@@ -1,3 +1,5 @@
+Install-Module -Name Pester -Force -SkipPublisherCheck
+
 # your function
 function Get-Planet ([string]$Name='*')
 {
