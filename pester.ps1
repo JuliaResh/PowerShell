@@ -36,6 +36,17 @@ Describe 'Get-Planet' {
       $planets = Get-Planet -Name $Filter
       $planets.Name | Should -Be $Expected
     }
+    
+    It "This tests should fail" -TestCases @(
+      @{ Filter = 'Earth'; Expected = 'Neptune' }
+      @{ Filter = 'aaa'  ; Expected = 'Uranus' }
+      @{ Filter = 'm*'   ; Expected = 'Mercury' }
+    ) {
+      param ($Filter, $Expected)
+
+      $planets = Get-Planet -Name $Filter
+      $planets.Name | Should -Be $Expected
+    }
 
     It "Given invalid parameter -Name 'Alpha Centauri', it returns `$null" {
       $planets = Get-Planet -Name 'Alpha Centauri'
