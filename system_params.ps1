@@ -1,2 +1,2 @@
-Write-Output "build id is $env:teamcity_build_id"
-Write-Output "build type is $env:teamcity_buildType_id"
+Write-Output "Build id is $args[0]"
+Write-Output "Build type id is $args[1]"
