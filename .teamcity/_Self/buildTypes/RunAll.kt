@@ -55,9 +55,5 @@ object RunAll : BuildType({
         snapshot(WorkingDirectory.buildTypes.WorkingDirectory_RunAll) {
             reuseBuilds = ReuseBuilds.NO
         }
-        snapshot(AbsoluteId("Powershell_WorkingDirectory_CheckWorkingDirectory111")) {
-            reuseBuilds = ReuseBuilds.NO
-            onDependencyFailure = FailureAction.FAIL_TO_START
-        }
     }
 })
