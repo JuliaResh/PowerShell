@@ -29,5 +29,6 @@ node (Plugins -> teamcity-configs -> teamcity-configs:generate),
 the 'Debug' option is available in the context menu for the task.
 */
 
+//trigger change
 version = "2019.2"
 project(_Self.Project)
