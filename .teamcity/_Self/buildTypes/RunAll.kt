@@ -1,6 +1,7 @@
 package _Self.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.freeDiskSpace
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.schedule
 
 object RunAll : BuildType({
@@ -16,6 +17,13 @@ object RunAll : BuildType({
             triggerBuild = always()
             withPendingChangesOnly = false
             param("revisionRuleBuildBranch", "<default>")
+        }
+    }
+
+    features {
+        freeDiskSpace {
+            requiredSpace = "5gb"
+            failBuild = false
         }
     }
 
