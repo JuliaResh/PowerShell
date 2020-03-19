@@ -22,7 +22,7 @@ object RunAll : BuildType({
 
     features {
         freeDiskSpace {
-            requiredSpace = "5gb"
+            requiredSpace = "10g"
             failBuild = false
         }
     }
