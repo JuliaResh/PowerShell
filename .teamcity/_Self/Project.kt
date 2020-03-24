@@ -73,7 +73,6 @@ object Project : Project({
     }
 
     subProject(Arguments.Project)
-    subProject(Docker.Project)
     subProject(TemporaryScriptDeletion.Project)
     subProject(FileWithPowershellUseFile.Project)
     subProject(ScriptOutput.Project)
