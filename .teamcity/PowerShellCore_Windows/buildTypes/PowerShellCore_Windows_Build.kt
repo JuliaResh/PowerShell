@@ -16,6 +16,7 @@ object PowerShellCore_Windows_Build : BuildType({
     steps {
         powerShell {
             platform = PowerShellStep.Platform.x64
+            edition = PowerShellStep.Edition.Desktop
             scriptMode = file {
                 path = "host.ps1"
             }
